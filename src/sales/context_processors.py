@@ -1,7 +1,11 @@
 from . import settings
 from django.conf import settings
-from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
+
+if hasattr(settings, 'SALES_MODEL_FROM') and hasattr(settings, 'SALES_MODEL_IMPORT'):
+    User = getattr(__import__(settings.SALES_MODEL_FROM, fromlist=[settings.SALES_MODEL_IMPORT]), settings.SALES_MODEL_IMPORT)
+else:
+    from django.contrib.auth.models import User
 
 
 def get_sales(salesID):
