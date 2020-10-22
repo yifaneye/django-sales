@@ -6,9 +6,11 @@ verify_ssl = true
 [dev-packages]
 twine = "*"
 pathlib = "*"
+m2r = "*"
 
 [packages]
 django = "*"
+m2r = "*"
 
 [requires]
 python_version = "3.8"
