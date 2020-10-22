@@ -60,7 +60,11 @@ SALES_LINK_PARAMETER = 'sales'
 SALES_DEFAULT_ID = 1  # ?sales=1
 SALES_COOKIE_NAME = 'sales'
 SALES_COOKIE_MAX_AGE = 3600  # 1 hour
+SALES_MODEL_FROM = 'django.contrib.auth.models'
+SALES_MODEL_IMPORT = 'User'  # from SALES_MODEL_FROM import SALES_MODEL_IMPORT
 ```
+In version 0.0.1, django-sales makes use of django.contrib.auth.models.User model, which can be easily extended according to your needs. (e.g. Add a phone number field)
+From version 0.1.0, django-sales allows developer to specify the Sales model to lookup sales, partners and affiliates.
 
 ### Step 4. Load sales tag (in any .html file)
 ```html
@@ -79,8 +83,6 @@ SALES_COOKIE_MAX_AGE = 3600  # 1 hour
 <a href="mailto:{{ sales.email }}">Email</a>
 <p>{{ sales.first_name }} {{ sales.last_name }}</p>
 ```
-
-django-sales makes use of django.contrib.auth.models.User model, which can be easily extended according to your needs. (e.g. Add a phone number field)
 
 ## Contributing
 Pull requests are welcome.
