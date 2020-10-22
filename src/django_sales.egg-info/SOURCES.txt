@@ -1,5 +1,4 @@
 LICENSE.txt
-MANIFEST.in
 Pipfile
 Pipfile.lock
 README.md
