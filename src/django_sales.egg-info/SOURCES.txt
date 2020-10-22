@@ -2,6 +2,7 @@ LICENSE.txt
 Pipfile
 Pipfile.lock
 README.md
+README.rst
 setup.py
 src/django_sales.egg-info/PKG-INFO
 src/django_sales.egg-info/SOURCES.txt

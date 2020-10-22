@@ -3,7 +3,7 @@ import pathlib
 from setuptools import setup
 
 CWD = pathlib.Path(__file__).parent
-README = (CWD / "README.md").read_text()
+README = (CWD / "README.rst").read_text()
 
 setup(
     name='django-sales',
