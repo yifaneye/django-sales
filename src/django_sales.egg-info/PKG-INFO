@@ -1,6 +1,6 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: django-sales
-Version: 0.1.0
+Version: 0.1.1
 Summary: Display different contact details based on query parameter and cookie
 Home-page: https://github.com/yifaneye/django-sales
 Author: Yifan Ai
@@ -126,3 +126,4 @@ Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
