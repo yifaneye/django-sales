@@ -80,7 +80,7 @@ The defaults are:
 In version 0.0.1, django-sales makes use of django.contrib.auth.models.User model, which can be easily extended according to your needs. (e.g. Add a phone number field)
 From version 0.1.0, django-sales allows developer to specify the Sales model to lookup sales, partners and affiliates.
 
-Step 4. Load sales tag (in any .html file)
+Step 5. Load sales tag (in any .html file)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
@@ -88,7 +88,7 @@ Step 4. Load sales tag (in any .html file)
    {% load static %}
    {% load sales %}  # here
 
-Step 5. Build sales links (in any .html file)
+Step 6. Build sales links (in any .html file)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
@@ -96,8 +96,8 @@ Step 5. Build sales links (in any .html file)
    <a href="{% sales '/' %}">Home</a>
    <a href="{% sales '/contact' %}">Contact</a>
 
-Step 6. Display sales information (in any .html file)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step 7. Display sales information (in relevant .html files)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
 

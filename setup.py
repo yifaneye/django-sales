@@ -7,7 +7,7 @@ README = (CWD / "README.rst").read_text()
 
 setup(
     name='django-sales',
-    version='0.1.2',
+    version='0.1.3',
     description='Display different contact details based on query parameter and cookie',
     packages=["sales", "sales/middleware", "sales/templatetags"],
     include_package_data=True,

@@ -1,0 +1,4 @@
+SALES_LINK_PARAMETER = 'sales'
+SALES_DEFAULT_ID = 1  # ?sales=1
+SALES_COOKIE_NAME = 'sales'
+SALES_COOKIE_MAX_AGE = 60  # 1 minute
